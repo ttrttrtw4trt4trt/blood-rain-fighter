@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fighter Game Menu</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .menu {
+      text-align: center;
+      background: rgba(0,0,0,0.7);
+      padding: 40px 60px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      min-width: 300px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      letter-spacing: 4px;
+      font-weight: bold;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      margin: 15px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background: #ff3e3e;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff1a1a;
+    }
+
+    /* Optional: subtle animation */
+    .menu:hover {
+      box-shadow: 0 0 40px rgba(255, 62, 62, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <h1>FIGHTER GAME</h1>
+    <button id="startBtn">Start Game</button>
+    <button id="optionsBtn">Options</button>
+  </div>
+
+  <script>
+    const startBtn = document.getElementById('startBtn');
+    const optionsBtn = document.getElementById('optionsBtn');
+
+    startBtn.addEventListener('click', () => {
+      alert('Start Game clicked! Implement game start logic here.');
+      // Replace the alert with your game start code.
+    });
+
+    optionsBtn.addEventListener('click', () => {
+      alert('Options clicked! Implement options menu here.');
+      // Replace the alert with your options logic.
+    });
+  </script>
+
+</body>
+</html>
